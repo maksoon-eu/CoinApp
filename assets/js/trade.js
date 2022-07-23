@@ -27,6 +27,10 @@ document.querySelector('.tab-content_show').querySelector('.dropdown-menu').clas
 let d = document.querySelectorAll('.dropdown');
 for( let i = 0; i < d.length; i ++) {
     d[i].addEventListener('click', function () {
+        let sel = this.querySelectorAll('.select span');
+        for( let i = 0; i < sel.length; i ++) {
+            sel[i].style.textTransform = 'uppercase';
+        }
         setTimeout(function() {
             document.querySelector('.tab-content_show').querySelector('.dropdown-menu').classList.remove('bbb');
             document.querySelector('.tab-content_show').querySelector('.dropdown-menu').classList.add('aaa');
@@ -59,10 +63,14 @@ document.querySelector('.tab-content_show').querySelector('.dropdown-menu2').cla
 let m = document.querySelectorAll('.dropdown2');
 for( let i = 0; i < m.length; i ++) {
     m[i].addEventListener('click', function () {
+        let sel = document.querySelector('.tab-content_show').querySelectorAll('.select span');
+        for( let i = 0; i < sel.length; i ++) {
+            sel[i].style.textTransform = 'uppercase';
+        }
         this.style.width = '82px';
         this.classList.add('clicked');
         if (this.classList.contains('clicked')) {
-            document.querySelector('.tab-content_show').querySelector('.change__text2').style.opacity = 1
+            document.querySelector('.tab-content_show').querySelector('.change__text2').style.opacity = 1;
         }
         setTimeout(function() {
             document.querySelector('.tab-content_show').querySelector('.dropdown-menu2').classList.remove('bbb');
@@ -92,8 +100,6 @@ for( let i = 0; i < m.length; i ++) {
         }
     });
 }
-
-
 
 /* Return trade */
 let s = document.querySelectorAll('.trade__inner-list');

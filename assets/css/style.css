@@ -2139,6 +2139,9 @@ p {
   .search__input--trade {
     max-width: 148px;
   }
+  .dropdown2 {
+    width: 82px;
+  }
   .search__input--trade2 {
     max-width: 166px;
   }
