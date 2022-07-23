@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    
+    <title>TokenBar</title>
+
+</head>
+<body>
+
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="btn btn--logo rounded">
+                    <span class="text-white">TokenBar</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="trade.html">Trade</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="about.html">About</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="tools.html">Tools</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="advertise.html">Advertise</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="#">FreePriceBot</a>
+                    </div>
+                    <a href="#" class="btn__header .btn-bottom-animation-1">Connect Wallet
+                    </a>          
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="splide" id="image-carousel">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="slider__item">
+                        <img class="img" src="assets/img/slider.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="slider__item">
+                        <img class="img" src="assets/img/slider.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="slider__item">
+                        <img class="img" src="assets/img/slider.png" alt="">
+                    </div>
+                  </li>
+              </ul>
+        </div>
+    </section>
+
+    <div class="charts">
+        <div class="container">
+            <div class="charts__inner">
+                <div class="title">BSC Charts</div>
+                <div class="subtitle">View price charts for any token in your wallet (binance smart chain)</div>
+                <div class="projects__search">
+                    <div class="form">
+                        <form class="search" action="/" method="post">
+                            <input class="search__input index__input" placeholder="Token name / adress" type="text">
+                            <div class="search__photo index__list" href="#"></div>
+                            <div class="modal__block">
+                                <ul class="modal-menu">
+                                    <li>
+                                        <div class="hug">
+                                            <img src="assets/img/bsc.svg" alt="">
+                                            <span>Binance Smart Chain</span>
+                                        </div>
+                                        <div class="modal__cost">BSC-ZEED/USDT LP:<div class="green">$3,319,648</div></div>
+                                        <div class="modal__num">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</div>
+                                    </li>
+                                    <li>
+                                        <div class="hug">                                
+                                            <img src="assets/img/solana.svg" alt="">
+                                            <span>Solana</span>
+                                        </div>
+                                        <div class="modal__cost">BSC-ZEED/USDT LP:<div class="green">$3,319,648</div></div>
+                                        <div class="modal__num">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</div>
+                                    </li>
+                                    <li>
+                                        <div class="hug">
+                                            <img src="assets/img/ethereum.svg" alt="">
+                                            <span>Ethereum</span>
+                                        </div>                                      
+                                        <div class="modal__cost">BSC-ZEED/USDT LP:<div class="green">$3,319,648</div></div>
+                                        <div class="modal__num">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</div>
+                                    </li>
+                                    <li>
+                                        <div class="hug">
+                                            <img src="assets/img/polygon.svg" alt="">
+                                            <span>Polygon</span>
+                                        </div>
+                                        <div class="modal__cost">BSC-ZEED/USDT LP:<div class="green">$3,319,648</div></div>
+                                        <div class="modal__num">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="charts__inner-history">
+                    <div class="history__item-top">History Tokens:</div>
+                    <div class="history__item">
+                        <div class="history__item-name">
+                            <img src="assets/img/icon.svg" alt="">
+                            Binance Smart Chain
+                        </div>
+                        <div class="history__item-group">
+                            <div class="group__name">BSC-ZEED/USDT LP:</div>
+                            <div class="group__cost">$3,319,648</div>
+                        </div>
+                        <div class="history__item-teg">
+                            <a href="2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af" class="copy">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</a>
+                        </div>
+                    </div>
+                    <div class="history__item">
+                        <div class="history__item-name">
+                            <img src="assets/img/icon.svg" alt="">
+                            Binance Smart Chain
+                        </div>
+                        <div class="history__item-group">
+                            <div class="group__name">BSC-ZEED/USDT LP:</div>
+                            <div class="group__cost">$3,319,648</div>
+                        </div>
+                        <div class="history__item-teg">
+                            <a href="2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af" class="copy">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</a>
+                        </div>
+                    </div>
+                    <div class="history__item">
+                        <div class="history__item-name">
+                            <img src="assets/img/icon.svg" alt="">
+                            Binance Smart Chain
+                        </div>
+                        <div class="history__item-group">
+                            <div class="group__name">BSC-ZEED/USDT LP:</div>
+                            <div class="group__cost">$3,319,648</div>
+                        </div>
+                        <div class="history__item-teg">
+                            <a href="2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af" class="copy">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</a>
+                        </div>
+                    </div>
+                    <div class="history__item">
+                        <div class="history__item-name">
+                            <img src="assets/img/icon.svg" alt="">
+                            Binance Smart Chain
+                        </div>
+                        <div class="history__item-group">
+                            <div class="group__name">BSC-ZEED/USDT LP:</div>
+                            <div class="group__cost">$3,319,648</div>
+                        </div>
+                        <div class="history__item-teg">
+                            <a href="2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af" class="copy">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</a>
+                        </div>
+                    </div>
+                    <div class="history__item">
+                        <div class="history__item-name">
+                            <img src="assets/img/icon.svg" alt="">
+                            Binance Smart Chain
+                        </div>
+                        <div class="history__item-group">
+                            <div class="group__name">BSC-ZEED/USDT LP:</div>
+                            <div class="group__cost">$3,319,648</div>
+                        </div>
+                        <div class="history__item-teg">
+                            <a href="2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af" class="copy">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</a>
+                        </div>
+                    </div>
+                    <div class="history__item">
+                        <div class="history__item-name">
+                            <img src="assets/img/icon.svg" alt="">
+                            Binance Smart Chain
+                        </div>
+                        <div class="history__item-group">
+                            <div class="group__name">BSC-ZEED/USDT LP:</div>
+                            <div class="group__cost">$3,319,648</div>
+                        </div>
+                        <div class="history__item-teg">
+                            <a href="2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af" class="copy">2qPiTAMwqzboSFn8GfWsedK5B5UFn8GfWsedK5Af</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-copy">&COPY; 2022 TokenBar. All rights reserved.</div>
+                <div class="footer__inner-logo">
+                    <img src="assets/img/logo-footer.svg" alt="">
+                </div>
+                <div class="footer__inner-contact">
+                    <a class="telegram" href="#">
+                        <img src="assets/img/telegram.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#">
+                        <img src="assets/img/twitter.svg" alt="">
+                    </a>
+                    <a class="discord" href="#">
+                        <img src="assets/img/discord.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>

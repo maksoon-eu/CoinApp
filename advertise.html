@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    
+    <title>TokenBar</title>
+
+</head>
+<body>
+
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="btn btn--logo rounded">
+                    <span class="text-white">TokenBar</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="trade.html">Trade</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="about.html">About</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="tools.html">Tools</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="advertise.html">Advertise</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="#">FreePriceBot</a>
+                    </div>
+                    <a href="#" class="btn__header">
+                        <span class="text-white">Connect Wallet</span>
+                    </a>          
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="splide" id="image-carousel">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="slider__item">
+                        <img class="img" src="assets/img/slider.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="slider__item">
+                        <img class="img" src="assets/img/slider.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="slider__item">
+                        <img class="img" src="assets/img/slider.png" alt="">
+                    </div>
+                  </li>
+              </ul>
+        </div>
+    </section>
+
+    <div class="tools">
+        <div class="container">
+            <div class="tools__inner">
+                <div class="tab-wrapper">
+                    <div class="tabs-header tabs-header__tools">
+                        <div class="tab-header tab-header__tools">Tools</div>
+                        <div class="tab-header tab-header_show tab-header__tools">Advertise</div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-content fade">
+                            <div class="tab-content__title">
+                                Tools
+                            </div>
+                            <div class="tab-content__subtitle">
+                                At the moment, only FreePriceBot is available from our tools
+                            </div>
+                            <div class="tab__flex">
+                                <div class="tab-content__left">
+                                    <div class="tab-content__left-img">
+                                        <img class="img" src="assets/img/graph.png" alt="">
+                                    </div>
+                                    <a href="#" class="btn__telegram btn__telegram-hover">
+                                        FreePriceBot
+                                        <img class="telegram__tools animate__animated" src="assets/img/telegram-tools.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="tab-content__right">
+                                    <div class="tab__subtitle">Invite the bot</div>
+                                    <div class="tab__text">You can add this pricebot for free to your telegram group by adding <a class="mail" href="mailto:@Poocoin_Pricebot">@Poocoin_Pricebot</a> to your group.</div>
+                                    <div class="tab__subtitle">Set the token</div>
+                                    <div class="tab__text">Set the tracked token with the command /set_token {address}
+                                        For example, to set the poocoin token type: /set_token 0xb27adaffb9fea1801459a1a81b17218288c097cc</div>
+                                    <div class="tab__subtitle">Request the price and chart</div>
+                                    <div class="tab__text">Anyone in the group can request the price chart by typing /price</div>
+                                    <div class="tab__subtitle">Set additional text</div>
+                                    <div class="tab__text">You can set additional text at the end of each price response with /set_message {text}</div>
+                                    <div class="tab__text">You can set links inside the message with the HTML a tag. For example, in the preview below it has been used to set the social media links.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content fade tab-content_show">
+                            <div class="tab-content__title">
+                                Banner Ads
+                            </div>
+                            <div class="tab-content__subtitle">
+                                You can place an anonymous advertisement for your project.
+                            </div>
+                            <div class="tab__flex">
+                                <div class="tab-content__left">
+                                    <div class="tab__left-inner">
+                                        <img src="assets/img/ads.svg" alt="">
+                                        <div class="tab__left-text">The pricing and<br> purchasing of<br> banner ads is here:</div>
+                                        <a href="https://a-ads.com" class="search__photo--trade search__photo--trade__ad">Go to the website</a>
+                                    </div>
+                                </div>
+                                <div class="tab-content__right">
+                                    <div class="tab__text tab__text--mod">The banner ads are purchased through an ad provider <a class="link_site" href="https://a-ads.com">a-ads.com</a></div>
+                                    <div class="tab__text tab__text--mod">You can also purchase them by hovering on the icon in the top-right and clicking the "your ad here" link.
+                                    </div>
+                                    <div class="tab__text tab__text--mod">If your project is an un-released fair launch, or a presale that has no available presale url on your website, the ad will be limited to only appearing in the bottom left spot marked as "presale ads". It will appear in a-ads as being marked as "risky".</div>
+                                    <div class="tab__text tab__text--mod">This limitation is removed after your token is launched or after you provide a presale url for unicrypt or dxsale.</div>
+                                    <div class="tab__text tab__text--mod">You can set links inside the message with the HTML a tag. For example, in the preview below it has been used to set the social media links.</div>
+                                </div>
+                            </div>
+                            <div class="text-content__under">
+                                <div class="info">
+                                    TokenBar admin contact info:<br>
+                                    Email: <a class="blue" href="mailto:promotions@appcoin">promotions@appcoin</a><br>
+                                    Telegram admin user: <a class="blue" href="#">@appcoin</a><br>
+                                    Telegram public chat: <a class="blue" href="https://t.me/appcoin">https://t.me/appcoin</a>
+                                    tokenchat                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-copy">&COPY; 2022 TokenBar. All rights reserved.</div>
+                <div class="footer__inner-logo">
+                    <img src="assets/img/logo-footer.svg" alt="">
+                </div>
+                <div class="footer__inner-contact">
+                    <a class="telegram" href="#">
+                        <img src="assets/img/telegram.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#">
+                        <img src="assets/img/twitter.svg" alt="">
+                    </a>
+                    <a class="discord" href="#">
+                        <img src="assets/img/discord.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/advertise.js"></script>
+
+</body>
+</html>

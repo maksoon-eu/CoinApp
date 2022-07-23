@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+    <script>
+        window.onload=function(){
+        document.getElementById('main').style.display='block';
+        }
+    </script>
+    
+    <title>TokenBar</title>
+
+</head>
+<body>
+
+<div id = main style="display:none;">
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="btn btn--logo rounded">
+                    <span class="text-white">TokenBar</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="trade.html">Trade</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="about.html">About</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="tools.html">Tools</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="advertise.html">Advertise</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__item-link" href="#">FreePriceBot</a>
+                    </div>
+                    <a href="#" class="btn__header">
+                        <span class="text-white">Connect Wallet</span>
+                    </a>          
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="trade">
+        <div class="container">
+            <div class="title title--trade">Trade</div>
+            <div class="trade__inner">
+                <div class="tab-wrapper">
+                    <div class="tabs-header">
+                      <div class="tab-header tab-header_show">Auto</div>
+                      <div class="tab-header">Pancake v2</div>
+                      <div class="tab-header">Pancake v3</div>
+                      <div class="tab-header tab-header--img first">
+                        <img src="assets/img/code.png" alt="">
+                      </div>
+                      <div class="tab-header tab-header--img">
+                        <img src="assets/img/settings.png" alt="">
+                      </div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-content fade tab-content_show">
+                            <div class="trade__name">Auto selected: <span>Pancake v2</span></div>
+                            <div class="change">
+                                Slippage
+                                <div class="projects__search">
+                                    <div class="form">
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade" placeholder="0.5" type="text">
+                                            <a href="#" class="procent">%</a>
+                                            <a href="#" class="search__photo--trade"><span>Auto Slippage</span></a>
+                                        </form>
+
+                                        <div class="change__text">
+                                            <span>From <div class="jsCount">BNB</div></span>
+                                            <div class="balance">Balance: 0</div>
+                                        </div>
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade search__input--trade2 cheked" placeholder="100" type="text">
+                                            <a href="#" class="procent procent__2">Max</a>
+                                            <div class="dropdown">
+                                                <div class="select">
+                                                <img class="resr" src="">
+                                                <span><img src="assets/img/bnb.svg" alt="">BNB</span>
+                                                <i class="fa fa-chevron-left"></i>
+                                                </div>
+                                                <input type="hidden">
+                                                <div class="shadow">
+                                                <div class="dropdown-menu bbb">
+                                                    <div class="text9">Select a token</div>
+                                                    <form class="search search--coin" action="/" method="post">
+                                                        <input class="search__input search__input--coin" placeholder="Token name / adress" type="text">
+                                                        <a class="search__photo search__photo--coin" href="#"></a>
+                                                    </form>
+                                                    <li><img src="assets/img/bnb.svg" alt="">BNB</li>
+                                                    <li><img src="assets/img/eth.svg" alt="">ETH</li>
+                                                    <li><img src="assets/img/usdt.svg" alt="">USDT</li>
+                                                    <li><img src="assets/img/btcb.svg" alt="">BTCB</li>
+                                                    <li><img src="assets/img/busd.svg" alt="">BUSD</li>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="return">
+                                                <img src="assets/img/arrow.svg" alt="">
+                                            </div>
+                                        </form>
+                                        <div class="change__text change__text2">
+                                            <span>To <div class="jsCount2"></div></span>
+                                            <div class="balance">Balance: 0</div>
+                                        </div>
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade search__input--trade2 search__input--trade3" placeholder="100" type="text">
+                                            <div class="dropdown2">
+                                                <div class="select">
+                                                <img class="resr" src="">
+                                                <span class="line"><img src="" alt="">Select a currency</span>
+                                                <i class="fa fa-chevron-left"></i>
+                                                </div>
+                                                <input type="hidden">
+                                                <div class="shadow2">
+                                                <div class="dropdown-menu2 bbb">
+                                                    <div class="text9">Select a token</div>
+                                                    <form class="search search--coin" action="/" method="post">
+                                                        <input class="search__input search__input--coin" placeholder="Token name / adress" type="text">
+                                                        <a class="search__photo search__photo--coin" href="#"></a>
+                                                    </form>
+                                                    <li><img src="assets/img/bnb.svg" alt="">BNB</li>
+                                                    <li><img src="assets/img/eth.svg" alt="">ETH</li>
+                                                    <li><img src="assets/img/usdt.svg" alt="">USDT</li>
+                                                    <li><img src="assets/img/btcb.svg" alt="">BTCB</li>
+                                                    <li><img src="assets/img/busd.svg" alt="">BUSD</li>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trade__inner-list">
+                                <div class="trade__list-inner">
+                                    Minimum Received: 1.00695<div class="jsCount2">BTCB</div><br>Price Impact: 0.09%<br>Price: 0.0101198<div class="jsCount2">BTCB</div> /<div class="jsCount">BNB</div><br>Price: 98.8164<div class="jsCount">BNB</div> /<div class="jsCount2">BTCB</div>
+                                </div>
+                                <div class="trade__list-desck">
+                                    <div class="jsCount">BNB</div> ><div class="jsCount2">BTCB</div>
+                                </div>
+                                <div class="trade__list-error">Insufficient BNB balance</div>
+                            </div>
+                            <div class="trade__inner-connect">
+                                Connect your wallet.
+                            </div>
+                        </div>
+
+                        <div class="tab-content fade">
+                            <div class="trade__name"><span>Pancake v2</span></div>
+                            <div class="change">
+                                Slippage
+                                <div class="projects__search">
+                                    <div class="form">
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade" placeholder="0.5" type="text">
+                                            <a href="#" class="procent">%</a>
+                                            <a href="#" class="search__photo--trade"><span>Auto Slippage</span></a>
+                                        </form>
+
+                                        <div class="change__text">
+                                            <span>From <div class="jsCount">BNB</div></span>
+                                            <div class="balance">Balance: 0</div>
+                                        </div>
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade search__input--trade2 cheked" placeholder="100" type="text">
+                                            <a href="#" class="procent procent__2">Max</a>
+                                            <div class="dropdown">
+                                                <div class="select">
+                                                <img class="resr" src="">
+                                                <span><img src="assets/img/bnb.svg" alt="">BNB</span>
+                                                <i class="fa fa-chevron-left"></i>
+                                                </div>
+                                                <input type="hidden">
+                                                <div class="shadow">
+                                                <div class="dropdown-menu bbb">
+                                                    <div class="text9">Select a token</div>
+                                                    <form class="search search--coin" action="/" method="post">
+                                                        <input class="search__input search__input--coin" placeholder="Token name / adress" type="text">
+                                                        <a class="search__photo search__photo--coin" href="#"></a>
+                                                    </form>
+                                                    <li><img src="assets/img/bnb.svg" alt="">BNB</li>
+                                                    <li><img src="assets/img/eth.svg" alt="">ETH</li>
+                                                    <li><img src="assets/img/usdt.svg" alt="">USDT</li>
+                                                    <li><img src="assets/img/btcb.svg" alt="">BTCB</li>
+                                                    <li><img src="assets/img/busd.svg" alt="">BUSD</li>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="return">
+                                            <img src="assets/img/arrow.svg" alt="">
+                                        </div>
+                                        <div class="change__text change__text2">
+                                            <span>To <div class="jsCount2"></div></span>
+                                            <div class="balance">Balance: 0</div>
+                                        </div>
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade search__input--trade2 search__input--trade3" placeholder="100" type="text">
+                                            <div class="dropdown2">
+                                                <div class="select">
+                                                <img class="resr" src="">
+                                                <span class="line"><img src="" alt="">Select a currency</span>
+                                                <i class="fa fa-chevron-left"></i>
+                                                </div>
+                                                <input type="hidden">
+                                                <div class="shadow2">
+                                                <div class="dropdown-menu2 bbb">
+                                                    <div class="text9">Select a token</div>
+                                                    <form class="search search--coin" action="/" method="post">
+                                                        <input class="search__input search__input--coin" placeholder="Token name / adress" type="text">
+                                                        <a class="search__photo search__photo--coin" href="#"></a>
+                                                    </form>
+                                                    <li><img src="assets/img/bnb.svg" alt="">BNB</li>
+                                                    <li><img src="assets/img/eth.svg" alt="">ETH</li>
+                                                    <li><img src="assets/img/usdt.svg" alt="">USDT</li>
+                                                    <li><img src="assets/img/btcb.svg" alt="">BTCB</li>
+                                                    <li><img src="assets/img/busd.svg" alt="">BUSD</li>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trade__inner-list">
+                                <div class="trade__list-inner">
+                                    Minimum Received: 1.00695<div class="jsCount2">BTCB</div><br>Price Impact: 0.09%<br>Price: 0.0101198<div class="jsCount2">BTCB</div> /<div class="jsCount">BNB</div><br>Price: 98.8164<div class="jsCount">BNB</div> /<div class="jsCount2">BTCB</div>
+                                </div>
+                                <div class="trade__list-desck">
+                                    <div class="jsCount">BNB</div> ><div class="jsCount2">BTCB</div>
+                                </div>
+                                <div class="trade__list-error">Insufficient BNB balance</div>
+                            </div>
+                            <div class="trade__inner-connect">
+                                Connect your wallet.
+                            </div>
+                        </div>
+
+                        <div class="tab-content fade">
+                            <div class="trade__name"><span>Pancake v3</span></div>
+                            <div class="change">
+                                Slippage
+                                <div class="projects__search">
+                                    <div class="form">
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade" placeholder="0.5" type="text">
+                                            <a href="#" class="procent">%</a>
+                                            <a href="#" class="search__photo--trade"><span>Auto Slippage</span></a>
+                                        </form>
+
+                                        <div class="change__text">
+                                            <span>From <div class="jsCount">BNB</div></span>
+                                            <div class="balance">Balance: 0</div>
+                                        </div>
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade search__input--trade2 cheked" placeholder="100" type="text">
+                                            <a href="#" class="procent procent__2">Max</a>
+                                            <div class="dropdown">
+                                                <div class="select">
+                                                <img class="resr" src="">
+                                                <span><img src="assets/img/bnb.svg" alt="">BNB</span>
+                                                <i class="fa fa-chevron-left"></i>
+                                                </div>
+                                                <input type="hidden">
+                                                <div class="shadow">
+                                                <div class="dropdown-menu bbb">
+                                                    <div class="text9">Select a token</div>
+                                                    <form class="search search--coin" action="/" method="post">
+                                                        <input class="search__input search__input--coin" placeholder="Token name / adress" type="text">
+                                                        <a class="search__photo search__photo--coin" href="#"></a>
+                                                    </form>
+                                                    <li><img src="assets/img/bnb.svg" alt="">BNB</li>
+                                                    <li><img src="assets/img/eth.svg" alt="">ETH</li>
+                                                    <li><img src="assets/img/usdt.svg" alt="">USDT</li>
+                                                    <li><img src="assets/img/btcb.svg" alt="">BTCB</li>
+                                                    <li><img src="assets/img/busd.svg" alt="">BUSD</li>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="return">
+                                            <img src="assets/img/arrow.svg" alt="">
+                                        </div>
+                                        <div class="change__text change__text2">
+                                            <span>To <div class="jsCount2"></div></span>
+                                            <div class="balance">Balance: 0</div>
+                                        </div>
+                                        <form class="search search--trade" action="/" method="post">
+                                            <input class="search__input search__input--trade search__input--trade2 search__input--trade3" placeholder="100" type="text">
+                                            <div class="dropdown2">
+                                                <div class="select">
+                                                <img class="resr" src="">
+                                                <span class="line"><img src="" alt="">Select a currency</span>
+                                                <i class="fa fa-chevron-left"></i>
+                                                </div>
+                                                <input type="hidden">
+                                                <div class="shadow2">
+                                                <div class="dropdown-menu2 bbb">
+                                                    <div class="text9">Select a token</div>
+                                                    <form class="search search--coin" action="/" method="post">
+                                                        <input class="search__input search__input--coin" placeholder="Token name / adress" type="text">
+                                                        <a class="search__photo search__photo--coin" href="#"></a>
+                                                    </form>
+                                                    <li><img src="assets/img/bnb.svg" alt="">BNB</li>
+                                                    <li><img src="assets/img/eth.svg" alt="">ETH</li>
+                                                    <li><img src="assets/img/usdt.svg" alt="">USDT</li>
+                                                    <li><img src="assets/img/btcb.svg" alt="">BTCB</li>
+                                                    <li><img src="assets/img/busd.svg" alt="">BUSD</li>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trade__inner-list">
+                                <div class="trade__list-inner">
+                                    Minimum Received: 1.00695<div class="jsCount2">BTCB</div><br>Price Impact: 0.09%<br>Price: 0.0101198<div class="jsCount2">BTCB</div> /<div class="jsCount">BNB</div><br>Price: 98.8164<div class="jsCount">BNB</div> /<div class="jsCount2">BTCB</div>
+                                </div>
+                                <div class="trade__list-desck">
+                                    <div class="jsCount">BNB</div> ><div class="jsCount2">BTCB</div>
+                                </div>
+                                <div class="trade__list-error">Insufficient BNB balance</div>
+                            </div>
+                            <div class="trade__inner-connect">
+                                Connect your wallet.
+                            </div>
+                        </div>
+                        <div class="tab-content fade">Header 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam numquam sapiente nobis ipsum soluta. Natus exercitationem tenetur modi ea libero perspiciatis rerum nulla laborum, ad nemo numquam? Aliquam, commodi minima.</div>
+                        <div class="tab-content fade">Header 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam numquam sapiente nobis ipsum soluta. Natus exercitationem tenetur modi ea libero perspiciatis rerum nulla laborum, ad nemo numquam? Aliquam, commodi minima.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-copy">&COPY; 2022 TokenBar. All rights reserved.</div>
+                <div class="footer__inner-logo">
+                    <img src="assets/img/logo-footer.svg" alt="">
+                </div>
+                <div class="footer__inner-contact">
+                    <a class="telegram" href="#">
+                        <img src="assets/img/telegram.svg" alt="">
+                    </a>
+                    <a class="twitter" href="#">
+                        <img src="assets/img/twitter.svg" alt="">
+                    </a>
+                    <a class="discord" href="#">
+                        <img src="assets/img/discord.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/trade.js"></script>
+
+</body>
+</html>
